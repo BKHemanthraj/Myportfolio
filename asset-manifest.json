@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Myportfolio/static/css/main.d55f36ab.css",
+    "main.js": "/Myportfolio/static/js/main.16338ce3.js",
+    "static/js/453.ad7768ec.chunk.js": "/Myportfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/photo.png": "/Myportfolio/static/media/photo.d47eae6dd1b62c2f7d8c.png",
+    "static/media/medicine.jpg": "/Myportfolio/static/media/medicine.98f06bb798b735c042d9.jpg",
+    "static/media/B K Hemanth Raj Resume.pdf": "/Myportfolio/static/media/B K Hemanth Raj Resume.8952b7681388f325a548.pdf",
+    "static/media/network.jpg": "/Myportfolio/static/media/network.787a7db3b25c0098aa2a.jpg",
+    "static/media/campus.jpg": "/Myportfolio/static/media/campus.bc95bc15da47616f74c1.jpg",
+    "static/media/acclogo.png": "/Myportfolio/static/media/acclogo.7b9f26f4458d56445b2c.png",
+    "static/media/pentagonlogo.jpg": "/Myportfolio/static/media/pentagonlogo.8519232f211989d7ef06.jpg",
+    "index.html": "/Myportfolio/index.html",
+    "main.d55f36ab.css.map": "/Myportfolio/static/css/main.d55f36ab.css.map",
+    "main.16338ce3.js.map": "/Myportfolio/static/js/main.16338ce3.js.map",
+    "453.ad7768ec.chunk.js.map": "/Myportfolio/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d55f36ab.css",
+    "static/js/main.16338ce3.js"
+  ]
+}
