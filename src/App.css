@@ -1,38 +1,448 @@
-.App {
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background:
+    repeating-linear-gradient(to right, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 10px, transparent 10px, transparent 20px),
+    linear-gradient(to bottom, #1B1931, #44174E, #662249, #A34054, #ED9E59);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+
+}
+
+h2 {
+  color: #984063;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* ========================
+   NAVBAR
+======================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-p h2 {
+  color: #FE9677;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.navbar .nav-link ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-link a {
+  color: #F64668;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+  color: #e0d8d0;
+}
+
+.download-btn {
+  padding: 10px 16px;
+  background-color: #984063;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #F64668;
+}
+
+/* ========================
+   ANIMATIONS
+======================== */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================
+   PROFILE SECTION
+======================== */
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px 60px;
+  gap: 50px;
+  text-align: left;
+}
+
+.profile-text h3 {
+  font-size: 22px;
+  color: #FE9677;
+}
+
+.profile-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F64668;
+}
+
+.profile-text p {
+  max-width: 600px;
+  color: white;
+  text-align: justify;
+}
+
+/* Apply animations */
+.profile-text {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.profile-image {
+  animation: fadeInRight 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.profile-image img {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================
+   TECH STACK
+======================== */
+.tech-container {
+  background-color: #ffe6eb;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: fit-content;
+  margin: auto;
+  text-align: center;
+  color: #F64668;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.tech-group {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #d63384;
+  color: #fff;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stack-row {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.tech-pill {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 140px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tech-pill:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* ========================
+   EXPERIENCE
+======================== */
+.main-container {
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-list {
+  width: 50%;
+  background: linear-gradient(to left, #c43dd6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card-item:hover {
+  transform: scale(1.02);
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+.card-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+
+.card-item button:hover {
+  background-color: #005fa3;
+}
+
+.details-panel {
+  width: 50%;
+  padding: 30px;
+  background: linear-gradient(to right, #fd60ae);
+  color: #000000;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-Align: justify;
+  font-size: 20px;
+}
+
+.details-panel.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+  
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer-alt {
+  background-color: #41436A;
+  color: #ddd;
+  padding: 20px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-address {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-icons a {
+  margin-left: 30px;
+  color: #ccc;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-icons a:first-child {
+  margin-left: 0;
+}
+
+.footer-icons a:hover {
+  color: #00bfff;
+}
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons .icon {
+  color: #ddd;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.footer-icons .icon:hover {
+  transform: scale(1.2);
+  color: #00bcd4; /* Accent hover color */
+}
+
+/* ========================
+   HAMBURGER MENU
+======================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #F64668;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative; /* so we can position child absolutely */
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar .nav-p h2 {
+    letter-spacing: 5px;
+    font-size: 22px;
+  }
+
+  .navbar .nav-link ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-link a {
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;  /* move independently */
+    right: 20px;         /* push to right side */
+    top: 20px;           /* keep top aligned */
+  }
+
+
+  .navbar .nav-link {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1a1a2e;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar .nav-link.show {
+    display: flex;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    padding: 100px 20px 40px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .profile-text h1 {
+    font-size: 36px;
+  }
+
+  .profile-text p {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .profile-image img {
+    width: 220px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .card-list,
+  .details-panel {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-icons a {
+    margin-left: 15px;
+    font-size: 20px;
   }
 }

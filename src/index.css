@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Make Profile (About) full screen height */
+.profile-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+/* Add space between sections */
+.section-wrapper > section {
+  margin-bottom: 60px;
+}
+.section-wrapper > section:last-child {
+  margin-bottom: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.techstack-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c78; /* same as your TechStack title color */
+  margin-bottom: 20px;
 }
+
