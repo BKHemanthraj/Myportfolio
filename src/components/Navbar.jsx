@@ -34,7 +34,7 @@ function Navbar() {
                 download
                 className="download-btn"
               >
-                Resume
+                Download CV
               </a>
             </li>
           </ul>

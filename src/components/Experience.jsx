@@ -63,11 +63,13 @@ function Experience() {
                       <li><b>Company:</b> Pentagon Space, Bengaluru, India</li>
                       <li><b>Duration:</b> Jan 2025 – Aug 2025</li>
                       <li><b>Type:</b> On-Site Internship (Training + Real-Time Projects)</li>
-                      <b><u>About</u></b>
+                      
+                      <h2><b><u>About</u></b></h2>
                       <li>Pentagon Space is a Bengaluru-based IT Training & Consulting company founded in 2020, specializing in Full Stack Development, Software Testing, Data Science, AI/ML, and Cloud Computing.</li>
                       <li>The internship provided hands-on exposure to real-time industry projects, strengthening both front-end and back-end development skills.</li>
                       <li><b>Company:</b> <a href="https://pentagonspace.in" target="_blank">Pentagon Space Website</a></li>
-                      <b><u>Role And Responsibilities</u></b>
+
+                      <h2><b><u>Role And Responsibilities</u></b></h2>
                       <li>Built and deployed full-stack web applications using Python (Django) and SQL databases.</li>
                       <li>Designed and implemented REST APIs for seamless communication between front-end and back-end.</li>
                       <li>Created interactive user interfaces with HTML, CSS, JavaScript, and React.</li>

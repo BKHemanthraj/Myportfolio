@@ -10,16 +10,43 @@
 /* Add space between sections */
 .section-wrapper > section {
   margin-bottom: 60px;
+  
 }
 .section-wrapper > section:last-child {
   margin-bottom: 0;
 }
 
-.techstack-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e74c78; /* same as your TechStack title color */
-  margin-bottom: 20px;
+
+
+/* Section background same as TechStack */
+
+.about-main {
+  background-color: #ffe6ec;  /* soft pink */
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading pill */
+.techstack-title {
+  display: block;
+  background: #d6336c;   /* dark pink pill */
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 auto 30px;   /* centers the pill */
+  width: fit-content;    /* keeps pill only as wide as text */
+}
+
+/* About text */
+.about-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #2b121d;
+  margin: 0;
+}

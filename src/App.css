@@ -145,7 +145,7 @@ section {
 
 .profile-image img {
   width: 280px;
-  border-radius: 20px;
+  border-radius: 70px 60px 60px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -275,7 +275,7 @@ section {
   color: #000000;
   transition: opacity 0.5s ease, transform 0.5s ease;
   text-Align: justify;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .details-panel.fade-in {
@@ -359,12 +359,18 @@ section {
    RESPONSIVE
 ======================== */
 @media (max-width: 768px) {
+ section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: center;
     padding: 15px 20px;
     text-align: center;
     position: relative; /* so we can position child absolutely */
+    
   }
 
   .navbar .nav-p h2 {
@@ -412,6 +418,7 @@ section {
     padding: 100px 20px 40px;
     gap: 30px;
     text-align: center;
+   
   }
 
   .profile-text h1 {
@@ -419,21 +426,25 @@ section {
   }
 
   .profile-text p {
-    text-align: center;
+   justify-content: center;
     padding: 0 10px;
   }
 
   .profile-image img {
     width: 220px;
   }
-
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
   .main-container {
     flex-direction: column;
   }
 
   .card-list,
-  .details-panel {
+  .details-panel{
     width: 100%;
+
   }
 
   .footer-container {
@@ -447,3 +458,7 @@ section {
     font-size: 20px;
   }
 }
+
+
+
+

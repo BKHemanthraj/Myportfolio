@@ -9,11 +9,9 @@ function Profile() {
           <h3>Hi, I'm</h3>
           <h1>B K HEMANTH RAJ</h1>
           <p>
-            I’m a versatile and detail-oriented Full-Stack Web Developer skilled in building
-            scalable and responsive web applications using technologies like Python, Django,
-            HTML, CSS, JavaScript, and SQL. <br />
-            Proven Ability To Work Collaboratively In Team Settings And Adapt To Dynamic
-            Environments To Develop Strong analytical skills and a passion for problem-solving.
+            I’m a developer with a passion for designing and building smart, scalable, and user-friendly 
+            web applications. Skilled in Python, Django, SQL, and modern frontend frameworks, 
+            I thrive on solving challenges and learning new technologies.
           </p>
         </div>
         <div className="profile-image">
