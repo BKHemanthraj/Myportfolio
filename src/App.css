@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* GLOBAL */
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background:
@@ -26,9 +24,7 @@ section {
   padding: 60px 0;
 }
 
-/* ========================
-   NAVBAR
-======================== */
+/* NAVBAR*/
 .navbar {
   position: fixed;
   top: 0;
@@ -85,9 +81,7 @@ section {
   background-color: #F64668;
 }
 
-/* ========================
-   ANIMATIONS
-======================== */
+/*ANIMATIONS*/
 @keyframes fadeInLeft {
   from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
@@ -103,9 +97,7 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ========================
-   PROFILE SECTION
-======================== */
+/* PROFILE SECTION */
 .profile-section {
   display: flex;
   flex-wrap: wrap;
@@ -149,9 +141,7 @@ section {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* ========================
-   TECH STACK
-======================== */
+/* TECH STACK*/
 .tech-container {
   background-color: #ffe6eb;
   border-radius: 20px;
@@ -208,9 +198,7 @@ section {
   transform: scale(1.05);
 }
 
-/* ========================
-   EXPERIENCE
-======================== */
+/* EXPERIENCE*/
 .main-container {
   display: flex;
   max-width: 1350px;
@@ -228,6 +216,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .card-item {
@@ -285,9 +274,7 @@ section {
   
 }
 
-/* ========================
-   FOOTER
-======================== */
+/* FOOTER*/
 .footer-alt {
   background-color: #41436A;
   color: #ddd;
@@ -337,9 +324,7 @@ section {
   color: #00bcd4; /* Accent hover color */
 }
 
-/* ========================
-   HAMBURGER MENU
-======================== */
+/*HAMBURGER MENU*/
 .hamburger {
   display: none;
   flex-direction: column;
@@ -355,9 +340,7 @@ section {
   transition: all 0.3s ease;
 }
 
-/* ========================
-   RESPONSIVE
-======================== */
+/*  RESPONSIVE*/
 @media (max-width: 768px) {
  section {
     padding-left: 5px;

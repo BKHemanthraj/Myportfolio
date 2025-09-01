@@ -178,7 +178,7 @@ function Project() {
                         '<ul>' +
                           '<li><b>Role:</b> Developer (Backend + Data/ML)</li>' +
                           '<li><b>Duration:</b> 4–6 weeks</li>' +
-                          '<li><b>Team:</b> Solo (adjust if needed)</li>' +
+                          '<li><b>Team:</b>  3 Members</li>' +
                         '</ul>' +
 
                         '<h2>Tech Stack</h2>' +
