@@ -27,6 +27,7 @@ function Navbar() {
             <li><a href="#techstack">Tech Stack</a></li>
             <li><a href="#experience">Experience(Intern)</a></li>
             <li><a href="#projects">Project</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
               <a

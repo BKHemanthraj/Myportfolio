@@ -1,3 +1,76 @@
+.education-section {
+margin: 0 auto;
+padding: 25px;
+
+}
+
+
+
+
+.edu-box {
+background: #ffeef7;
+border-radius: 20px;
+padding: 40px 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+
+.edu-category {
+flex: 1 1 280px;
+text-align: center;
+}
+
+
+.edu-header {
+display: inline-block;
+  background-color: #d63384;
+  color: #fff;
+padding: 10px 22px;
+border-radius: 40px;
+margin-bottom: 16px;
+font-size: 16px;
+font-weight: 600;
+}
+
+
+.edu-items {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+}
+
+
+.edu-pill {
+background: #fff;
+padding: 10px 20px;
+border-radius: 40px;
+box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+font-size: 14px;
+font-weight: 500;
+color: #111827;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.edu-pill:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+
+@media (max-width: 768px) {
+.edu-box {
+flex-direction: column;
+align-items: center;
+
+}
+.edu-category { width: 100%; }
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +110,7 @@ section {
   padding: 12px 40px;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
   
 }
 
@@ -133,6 +207,8 @@ section {
 .profile-image {
   animation: fadeInRight 1s ease-out forwards;
   animation-delay: 0.3s;
+   cursor: pointer;
+
 }
 
 .profile-image img {
@@ -140,6 +216,7 @@ section {
   border-radius: 70px 60px 60px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
 
 /* TECH STACK*/
 .tech-container {
@@ -442,6 +519,11 @@ section {
   }
 }
 
-
+.image{
+  height: 250px;
+  width: 200px;
+  background-color: green;
+  cursor: pointer;
+}
 
 

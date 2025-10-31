@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import campus from "../images/campus.jpg";
 import medicine from "../images/medicine.jpg";
 import Network from "../images/network.jpg";
+import Store from "../images/E-commerce Store.png"
 
 function Project() {
   const [details, setDetails] = useState({
@@ -40,56 +41,60 @@ function Project() {
         <h1 className="techstack-title">Projects</h1>
         <div className="main-container">
           <div className="card-list">
-            {/* Card 1 */}
+               {/* Card 1 */}
             <div className="card-item">
-              <img src={medicine} alt="Medical Shop System" />
-              <h2>Medical Shop Management System</h2>
+              <img src={Store} alt="E-commerce Store" />
+              <h2>E-commerce Store</h2>
               <p style={style}>
-                A Django-based web application with SQLite3 that manages medicines,
-                stock, billing, and customer records. It supports full CRUD operations
-                with inventory tracking, invoice generation, and supplier management,
-                automating daily medical store operations efficiently.
+                A ReactJS frontend project that fetches product data dynamically, 
+                provides a shopping cart system, and simulates checkout. It demonstrates API integration, state management, and responsive UI design.
               </p>
               <button
                 onClick={() =>
                   showDetails(
-                    "project",
-                    "Medical Shop Management System",
-                    '<h2>Role, Duration, Team</h2>'+
-                    '<li><b>Role:</b> Full-Stack Developer</li><li><b>Duration:</b> 1 month</li><li><b>Team:</b> Solo</li>'+
+                          "project",
+      "E-commerce Store",
+      '<h2>Role, Duration, Team</h2>' +
+        '<li><b>Role:</b> Frontend Developer</li>' +
+        '<li><b>Duration:</b> 1.5 Months</li>' +
+        '<li><b>Team:</b> Solo</li>' +
 
-                    '<h2>Tech Stack</h2>'+
-                    '<li><b>Frameworks:</b> Django (Python)</li> <li><b>Database:</b> SQLite3</li> <li><b>Frontend:</b> HTML, CSS, Bootstrap</li> <li><b>Tools:</b> Git, GitHub</li>'+
-                    
-                    '<h2>Problem</h2>'+
-                    'Medical shops often face challenges with manual billing, stock mismanagement, and tracking expired medicines. The goal was to build a simple web-based system to automate inventory and billing operations.'+
-                    
-                    '<h2>Solution</h2>'+
-                    'Designed a role-based Django web app where admins manage medicines and suppliers, while staff handle billing. The system updates the database in real time, tracks stock levels, and generates invoices automatically.'+
-                    
-                    '<h2>Key Features</h2>'+
-                     '<li>Dealer Management: Add, update, view, delete dealer details.</li>' +
-                      '<li>Employee Management: Manage employee records.</li>' +
-                      '<li>Customer Management: Maintain customer profiles.</li>' +
-                      '<li>Medicine Management: Track stock, pricing, and details of medicines.</li>' +
-                      '<li>Purchase Management: Record and view purchase transactions.</li><li>Dynamic Tables Forms: User-friendly CRUD operations with Django templates.</li>'
-                     +
-                      
-                      '<h2>Architecture / Workflow</h2>'+
-                      '<li><strong>Admin Login</strong> &rarr; Manage medicines, suppliers, staff</li>'+
-                      '<li><strong>Staff Login</strong> &rarr; Process billing &amp; customer transactions</li>'+
-                      '<li><strong>Database (SQLite3)</strong> &rarr; Stores medicines, stock, billing, and users</li>'+
-                      '<li><strong>System Output</strong> &rarr; Generates invoices &amp; updates stock automatically</li>'+
+        '<h2>Tech Stack</h2>' +
+        '<li><b>Frameworks:</b> ReactJS</li>' +
+        '<li><b>Styling:</b> CSS</li>' +
+        '<li><b>Package Manager:</b> npm</li>' +
+        '<li><b>Tools:</b> Git, GitHub</li>' +
 
-                      '<h2>Highlights / Impact</h2>'+
-                       '<li>Reduced billing time by automating invoice creation.</li>' +
-                      '<li>Improved accuracy in tracking stock and expiry dates.</li>' +
-                      '<li>Replaced manual registers with a reliable digital solution.</li>' +
-                     
-                      '<h2>Challenges & Learnings</h2>'+
-                     '<li>Learned Django ORM and database migrations.</li>'+
-                     '<li>Improved understanding of authentication and role-based access.</li>'+
-                     '<li>Designed efficient CRUD operations with templates and views.</li>'
+        '<h2>Problem</h2>' +
+        'Managing products, carts, and checkout manually is error-prone for small online stores. ' +
+        'The goal was to build a simple, scalable frontend e-commerce solution for browsing and purchasing products.' +
+
+        '<h2>Solution</h2>' +
+        'Developed a ReactJS-based web app that fetches products dynamically, displays them in a responsive layout, ' +
+        'allows adding/removing items to a cart, and calculates totals in real-time.' +
+
+        '<h2>Key Features</h2>' +
+        '<li>Product Listing: Fetch and display product details dynamically.</li>' +
+        '<li>Cart System: Add/remove items with automatic total calculation.</li>' +
+        '<li>Responsive UI: Works on desktop and mobile screens.</li>' +
+        '<li>Routing: Navigate between Home, Store, About, Contact, and Profile pages.</li>' +
+        '<li>User Authentication (Optional): Basic login/signup functionality.</li>' +
+
+        '<h2>Architecture / Workflow</h2>' +
+        '<li><strong>React Components</strong> → Handle UI and cart logic</li>' +
+        '<li><strong>API Fetching</strong> → Retrieve product data from APIs</li>' +
+        '<li><strong>State Management</strong> → Manage products, cart, and session</li>' +
+        '<li><strong>Output</strong> → Interactive store with checkout simulation</li>' +
+
+        '<h2>Highlights / Impact</h2>' +
+        '<li>Learned API integration with React.</li>' +
+        '<li>Improved frontend development and routing skills.</li>' +
+        '<li>Delivered a functional mini-store for learning and demos.</li>' +
+
+        '<h2>Challenges & Learnings</h2>' +
+        '<li>Handling async fetch calls and error management.</li>' +
+        '<li>Managing state across multiple components.</li>' +
+        '<li>Building reusable components for scalability.</li>'
                   )
                 }
               >
@@ -97,70 +102,7 @@ function Project() {
               </button>
             </div>
 
-            {/* Card 2 */}
-            <div className="card-item">
-              <img src={campus} alt="Campus Selection System" />
-              <h2>Campus Selections System</h2>
-              <p style={style}>
-                A web-based platform to streamline and automate student placement
-                processes, connecting students, recruiters, and administrators for smooth
-                campus hiring.
-              </p>
-              <button
-                onClick={() =>
-                  showDetails(
-                      "project",
-                    "Campus Selections System",
-                      '<h2>Role, Duration & Team</h2>' +
-                      '<li><b>Role:</b> Full-Stack Developer</li>' +
-                      '<li><b>Duration:</b> 2 months (Academic Project)</li>' +
-                      '<li><b>Team:</b> 4 Members</li>' +
-
-                      '<h2>Tech Stack</h2>' +
-                      '<li><b>Frontend:</b> HTML, CSS, PHP</li>' +
-                      '<li><b>Backend:</b> PHP</li>' +
-                      '<li><b>Database:</b> MySQL (crs.sql)</li>' +
-
-                      '<h2>Problem / Goal</h2>' +
-                      '<p>Manual placement processes were inefficient, time-consuming, and prone to errors. The goal was to digitize campus recruitment by providing a centralized system for students, companies, and admins.</p>' +
-
-                      '<h2>Solution Overview</h2>' +
-                      '<li>Students can register, search, and apply for jobs.</li>' +
-                      '<li>Companies can post jobs, manage applicants, and shortlist candidates.</li>' +
-                      '<li>Admins can manage users, companies, and recruitment events.</li>' +
-
-                      '<h2>Key Features</h2>' +
-                      '<li>Student & company login/registration</li>' +
-                      '<li>Job posting & application module</li>' +
-                      '<li>Admin dashboard for monitoring companies & applicants</li>' +
-                      '<li>Secure authentication & password reset system</li>' +
-                      '<li>Search & filter for jobs</li>' +
-                      '<li>Application status tracking</li>' +
-
-                      '<h2>Architecture / Workflow</h2>' +
-                      '<li>User Registration → Students & companies register via portal</li>' +
-                      '<li>Authentication → Login with validation & role-based access</li>' +
-                      '<li>Job Posting → Companies post vacancies</li>' +
-                      '<li>Applications → Students apply for posted jobs</li>' +
-                      '<li>Admin Oversight → Admin verifies companies, monitors jobs & applicants</li>' +
-
-                      '<h2>Highlights / Impact</h2>' +
-                      '<li>Reduced manual errors by 70% compared to traditional placement registers</li>' +
-                      '<li>Improved transparency in recruitment with a centralized system</li>' +
-                      '<li>Faster student shortlisting through database-driven queries</li>' +
-
-                      '<h2>Challenges & Learnings</h2>' +
-                      '<li>Learned database design & normalization for handling large user/job data</li>' +
-                      '<li>Implemented role-based access control in PHP</li>' +
-                      '<li>Faced challenges in session handling & password reset workflows</li>'
-                  )
-                }
-              >
-                View Details
-              </button>
-            </div>
-
-            {/* Card 3 */}
+                        {/* Card 2 */}
             <div className="card-item">
               <img src={Network} alt="Wifi intrusion" />
               <h2>Wifi Intrusion Detection System</h2>
@@ -177,7 +119,7 @@ function Project() {
                         '<h2>Role, Duration & Team</h2>' +
                         '<ul>' +
                           '<li><b>Role:</b> Developer (Backend + Data/ML)</li>' +
-                          '<li><b>Duration:</b> 4–6 weeks</li>' +
+                          '<li><b>Duration:</b> 2 Months</li>' +
                           '<li><b>Team:</b>  3 Members</li>' +
                         '</ul>' +
 
@@ -239,7 +181,135 @@ function Project() {
                 View Details
               </button>
             </div>
+            
+            {/* Card 3 */}
+            <div className="card-item">
+              <img src={campus} alt="Campus Selection System" />
+              <h2>Campus Selections System</h2>
+              <p style={style}>
+                A web-based platform to streamline and automate student placement
+                processes, connecting students, recruiters, and administrators for smooth
+                campus hiring.
+              </p>
+              <button
+                onClick={() =>
+                  showDetails(
+                      "project",
+                    "Campus Selections System",
+                      '<h2>Role, Duration & Team</h2>' +
+                      '<li><b>Role:</b> Full-Stack Developer</li>' +
+                      '<li><b>Duration:</b> 1.5 months (Academic Project)</li>' +
+                      '<li><b>Team:</b> 4 Members</li>' +
+
+                      '<h2>Tech Stack</h2>' +
+                      '<li><b>Frontend:</b> HTML, CSS, PHP</li>' +
+                      '<li><b>Backend:</b> PHP</li>' +
+                      '<li><b>Database:</b> MySQL (crs.sql)</li>' +
+
+                      '<h2>Problem / Goal</h2>' +
+                      '<p>Manual placement processes were inefficient, time-consuming, and prone to errors. The goal was to digitize campus recruitment by providing a centralized system for students, companies, and admins.</p>' +
+
+                      '<h2>Solution Overview</h2>' +
+                      '<li>Students can register, search, and apply for jobs.</li>' +
+                      '<li>Companies can post jobs, manage applicants, and shortlist candidates.</li>' +
+                      '<li>Admins can manage users, companies, and recruitment events.</li>' +
+
+                      '<h2>Key Features</h2>' +
+                      '<li>Student & company login/registration</li>' +
+                      '<li>Job posting & application module</li>' +
+                      '<li>Admin dashboard for monitoring companies & applicants</li>' +
+                      '<li>Secure authentication & password reset system</li>' +
+                      '<li>Search & filter for jobs</li>' +
+                      '<li>Application status tracking</li>' +
+
+                      '<h2>Architecture / Workflow</h2>' +
+                      '<li>User Registration → Students & companies register via portal</li>' +
+                      '<li>Authentication → Login with validation & role-based access</li>' +
+                      '<li>Job Posting → Companies post vacancies</li>' +
+                      '<li>Applications → Students apply for posted jobs</li>' +
+                      '<li>Admin Oversight → Admin verifies companies, monitors jobs & applicants</li>' +
+
+                      '<h2>Highlights / Impact</h2>' +
+                      '<li>Reduced manual errors by 70% compared to traditional placement registers</li>' +
+                      '<li>Improved transparency in recruitment with a centralized system</li>' +
+                      '<li>Faster student shortlisting through database-driven queries</li>' +
+
+                      '<h2>Challenges & Learnings</h2>' +
+                      '<li>Learned database design & normalization for handling large user/job data</li>' +
+                      '<li>Implemented role-based access control in PHP</li>' +
+                      '<li>Faced challenges in session handling & password reset workflows</li>'
+                  )
+                }
+              >
+                View Details
+              </button>
+            </div>
+
+              {/* Card 4 */}
+            <div className="card-item">
+              <img src={medicine} alt="Medical Shop System" />
+              <h2>Medical Shop Management System</h2>
+              <p style={style}>
+                A Django-based web application with SQLite3 that manages medicines,
+                stock, billing, and customer records. It supports full CRUD operations
+                with inventory tracking, invoice generation, and supplier management,
+                automating daily medical store operations efficiently.
+              </p>
+              <button
+                onClick={() =>
+                  showDetails(
+                    "project",
+                    "Medical Shop Management System",
+                    '<h2>Role, Duration, Team</h2>'+
+                    '<li><b>Role:</b> Full-Stack Developer</li><li><b>Duration:</b> 1.5 month</li><li><b>Team:</b> Solo</li>'+
+
+                    '<h2>Tech Stack</h2>'+
+                    '<li><b>Frameworks:</b> Django (Python)</li> <li><b>Database:</b> SQLite3</li> <li><b>Frontend:</b> HTML, CSS, Bootstrap</li> <li><b>Tools:</b> Git, GitHub</li>'+
+                    
+                    '<h2>Problem</h2>'+
+                    'Medical shops often face challenges with manual billing, stock mismanagement, and tracking expired medicines. The goal was to build a simple web-based system to automate inventory and billing operations.'+
+                    
+                    '<h2>Solution</h2>'+
+                    'Designed a role-based Django web app where admins manage medicines and suppliers, while staff handle billing. The system updates the database in real time, tracks stock levels, and generates invoices automatically.'+
+                    
+                    '<h2>Key Features</h2>'+
+                     '<li>Dealer Management: Add, update, view, delete dealer details.</li>' +
+                      '<li>Employee Management: Manage employee records.</li>' +
+                      '<li>Customer Management: Maintain customer profiles.</li>' +
+                      '<li>Medicine Management: Track stock, pricing, and details of medicines.</li>' +
+                      '<li>Purchase Management: Record and view purchase transactions.</li><li>Dynamic Tables Forms: User-friendly CRUD operations with Django templates.</li>'
+                     +
+                      
+                      '<h2>Architecture / Workflow</h2>'+
+                      '<li><strong>Admin Login</strong> &rarr; Manage medicines, suppliers, staff</li>'+
+                      '<li><strong>Staff Login</strong> &rarr; Process billing &amp; customer transactions</li>'+
+                      '<li><strong>Database (SQLite3)</strong> &rarr; Stores medicines, stock, billing, and users</li>'+
+                      '<li><strong>System Output</strong> &rarr; Generates invoices &amp; updates stock automatically</li>'+
+
+                      '<h2>Highlights / Impact</h2>'+
+                       '<li>Reduced billing time by automating invoice creation.</li>' +
+                      '<li>Improved accuracy in tracking stock and expiry dates.</li>' +
+                      '<li>Replaced manual registers with a reliable digital solution.</li>' +
+                     
+                      '<h2>Challenges & Learnings</h2>'+
+                     '<li>Learned Django ORM and database migrations.</li>'+
+                     '<li>Improved understanding of authentication and role-based access.</li>'+
+                     '<li>Designed efficient CRUD operations with templates and views.</li>'
+                  )
+                }
+              >
+                View Details
+              </button>
+            </div>
+            
           </div>
+
+          
+
+
+
+
+
 
           {/* Details Panel */}
           <div
